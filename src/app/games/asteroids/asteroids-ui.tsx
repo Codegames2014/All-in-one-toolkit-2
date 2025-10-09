@@ -58,7 +58,7 @@ export function AsteroidsUI() {
     window.addEventListener('keyup', handleKeyUp);
 
     function update() {
-      if (state.gameOver) return;
+      if (state.gameOver || !canvas || !ctx) return;
 
       const { ship, bullets, asteroids, keys } = state;
       
@@ -153,6 +153,7 @@ export function AsteroidsUI() {
     }
 
     function draw() {
+      if (!canvas || !ctx) return;
       ctx.fillStyle = '#000';
       ctx.fillRect(0, 0, canvas.width, canvas.height);
       
