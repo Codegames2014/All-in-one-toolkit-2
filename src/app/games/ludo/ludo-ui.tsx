@@ -137,8 +137,8 @@ const LudoBoard = ({ tokens, onTokenClick, movableTokens }: { tokens: Token[], o
             const tokenIndex = baseTokens.findIndex(t => t.id === token.id);
             return yardTokenPositions[token.color][tokenIndex];
         }
-        if(token.position > 100) { // Home path
-            const homePathIndex = token.position - 101;
+        if((token.position as number) > 100) { // Home path
+            const homePathIndex = (token.position as number) - 101;
             return homePathMap[token.color][homePathIndex];
         }
         return pathToBoardMap.get(token.position as number)!;
