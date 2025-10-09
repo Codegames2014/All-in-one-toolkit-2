@@ -20,7 +20,8 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
-import { handleLogoGeneration, type GenerateLogoInput } from "./actions";
+import { handleLogoGeneration } from "./actions";
+import type { GenerateLogoInput } from "@/ai/flows/generate-logo";
 import { Download, Loader2, Wand2 } from "lucide-react";
 import { Skeleton } from "@/components/ui/skeleton";
 
