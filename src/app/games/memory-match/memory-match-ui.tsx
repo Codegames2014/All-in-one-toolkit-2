@@ -107,7 +107,7 @@ export function MemoryMatchUI() {
             const firstCard = cards.find(c => c.id === firstId);
             const secondCard = cards.find(c => c.id === secondId);
 
-            if (firstCard?.icon === secondCard?.icon) {
+            if (firstCard && secondCard && firstCard.icon === secondCard.icon) {
                 // It's a match
                 setCards(prev => prev.map(card =>
                     card.icon === firstCard.icon ? { ...card, isMatched: true, isFlipped: false } : card
