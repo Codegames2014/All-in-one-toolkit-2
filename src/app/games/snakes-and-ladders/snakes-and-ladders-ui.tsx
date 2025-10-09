@@ -213,7 +213,7 @@ export function SnakesAndLaddersUI() {
           <Card className="bg-white/80 dark:bg-gray-800/80">
             <CardContent className="p-4 flex flex-col items-center gap-4">
               <h3 className="text-xl font-bold">Dice</h3>
-                <Button onClick={rollDice} disabled={isRolling || activePlayer?.isAI || winner} size="lg" className="w-24 h-24 text-6xl font-bold text-white shadow-lg bg-red-600 hover:bg-red-700">
+                <Button onClick={rollDice} disabled={isRolling || activePlayer?.isAI || !!winner} size="lg" className="w-24 h-24 text-6xl font-bold text-white shadow-lg bg-red-600 hover:bg-red-700">
                     {isRolling ? <Dices className="animate-spin"/> : diceValue || <Dices />}
                 </Button>
                <p className="text-sm text-muted-foreground">Turn: <span className="font-bold text-lg capitalize">{activePlayer.name}</span></p>
