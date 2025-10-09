@@ -40,12 +40,6 @@ export const tools: Tool[] = [
     href: "/",
   },
   {
-    name: "AI Chat",
-    description: "Chat with an advanced AI.",
-    icon: MessageCircle,
-    href: "/ai-chat",
-  },
-  {
     name: "Code Converter",
     description: "Translate code between languages.",
     icon: FileCode,

@@ -10,6 +10,5 @@ import '@/ai/flows/get-chess-move.ts';
 import '@/ai/flows/build-app.ts';
 import '@/ai/flows/generate-logo.ts';
 import '@/ai/flows/convert-currency.ts';
-import '@/ai/flows/generate-chat-response.ts';
 import '@/ai/flows/convert-code.ts';
 import '@/ai/flows/convert-file.ts';
